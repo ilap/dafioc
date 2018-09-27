@@ -36,7 +36,7 @@ set (VALA_SOURCES
     ErrorDomains.vala
 )
 
-set (PKG_DEPS glib-2.0 gee-1.0)
+set (PKG_DEPS glib-2.0 gee-0.8)
 ################################################################################
 
 find_package (PkgConfig)
