@@ -1,0 +1,16 @@
+sources = files (
+    'IContainer.vala',
+    'ErrorDomains.vala',
+    'IComponentAdapter.vala',
+    'Adapters/ConstructorInjectionComponentAdapterFactory.vala',
+    'Adapters/CachingComponentAdapter.vala',
+    'Adapters/ConstructorInjectionComponentAdapter.vala',
+    'Adapters/InstantiatingComponentAdapter.vala',
+    'Adapters/DecoratingComponentAdapter.vala',
+    'Adapters/InstanceComponentAdapter.vala',
+    'Adapters/DefaultComponentAdapterFactory.vala',
+    'Adapters/IComponentAdapterFactory.vala',
+    'Adapters/AbstractComponentAdapter.vala',
+    'Containers/CachedContainer.vala',
+    'IContainerRegistrar.vala',
+)

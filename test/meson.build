@@ -1,0 +1,3 @@
+sources = files (
+    'TestMain.vala',
+)
