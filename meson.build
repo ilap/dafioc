@@ -16,7 +16,7 @@ daf_lib = library(
   meson.project_name(), 
   sources,
   vala_header: meson.project_name() + '.h',
-  vala_vapi: meson.project_name() + '-' + meson.project_version () + '.vapi',
+  vala_vapi: meson.project_name() + '.vapi',
   vala_gir: meson.project_name() + '-' + meson.project_version () + '.gir',
   dependencies: daf_deps,
   install: true,
@@ -47,3 +47,12 @@ unit_test = executable(
     dependencies: [daf_dep, dafunit_dep, dafcore_dep],
 )
 test(meson.project_name() + ' test', unit_test)
+
+pkg = import('pkgconfig')
+pkg.generate(libraries : daf_lib,
+                 version : meson.project_version(),
+                 name : meson.project_name(),
+                 filebase : meson.project_name(),
+                 description : 'DaF\'s IoC Module',
+)
+
